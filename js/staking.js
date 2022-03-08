@@ -50,7 +50,6 @@ const expandables = new ethers.Contract(expandablesAddress, expandablesAbi(),sig
 const bamboo = new ethers.Contract(bambooAddress, bambooAbi(),signer);
 const connect = async()=>{
     await provider.send("eth_requestAccounts", []);
-    await checkConnectedStatus();
 };
 
 const getAddress = async()=>{
@@ -426,16 +425,6 @@ async function selectForUnstaking(id) {
     }
 }
 
-const checkConnectedStatus = async() => {
-    try {
-        await getAddress();
-        $(".connect-wallet-div").addClass('hidden');
-    }
-    catch {
-        $(".connect-wallet-div").removeClass('hidden');
-    }
-}
-
 const importBambooToWallet = async() => {
     ethereum.request({
         method: 'wallet_watchAsset',
@@ -451,8 +440,14 @@ const importBambooToWallet = async() => {
       });
 }
 
+const updateInfo = async () => {
+    let userAddress = await getAddress();
+    $("#account").text(`${userAddress.substr(0,9)}..`);
+    $("#mobile-account").text(`${userAddress.substr(0,9)}...`);
+};
+
 setInterval(async()=>{
-    await checkConnectedStatus();
+    await updateInfo();
     await updateApprovedStatus();
     await getPendingBambooBalance();
 }, 5000)
@@ -468,11 +463,9 @@ ethereum.on("accountsChanged", async(accounts_)=>{
 });
 
 window.onload = async()=>{
+    await updateInfo();
     await fixHeight();
-    await checkConnectedStatus();
     await updateApprovedStatus();
-
-
     if (pendingTransactions.size < 1) {
         await updateStakingInfo();
     }

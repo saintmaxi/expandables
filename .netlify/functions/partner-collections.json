@@ -1,0 +1,18 @@
+{
+    "0": {
+        "name": "Expandables",
+        "description": "Expandables is a series of cute on-chain generated pixel pandas using Chainlink VRF for generation. Adopt and venture your way into the Metaverse using our ERC-20 token $BAMBOO and the upcoming Panda Voxels!",
+        "image": "./images/Deeze.png",
+        "website": "#",
+        "twitter": "#",
+        "max-slots": 1000
+    },
+    "1": {
+        "name": "Expandables",
+        "description": "Expandables is a series of cute on-chain generated pixel pandas using Chainlink VRF for generation. Adopt and venture your way into the Metaverse using our ERC-20 token $BAMBOO and the upcoming Panda Voxels!",
+        "image": "./images/Deeze.png",
+        "website": "#",
+        "twitter": "#",
+        "max-slots": 1000
+    }
+}

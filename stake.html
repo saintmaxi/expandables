@@ -2,11 +2,11 @@
 <html data-wf-page="61b62517f825ce761a50774d" data-wf-site="617a8b113d88b114b8fcacb9">
 <head>
   <meta charset="utf-8">
-  <title>Expandables Staking</title>
+  <title>Expandables | Stake</title>
   <meta content="Stake your pandas and earn $BAMBOO! Venture into the Metaverse and use $BAMBOO in the Expandables ecosystem." name="description">
-  <meta content="Expandables Staking" property="og:title">
+  <meta content="Expandables | Stake" property="og:title">
   <meta content="Stake your pandas and earn $BAMBOO! Venture into the Metaverse and use $BAMBOO in the Expandables ecosystem." property="og:description">
-  <meta content="Expandables Staking" property="twitter:title">
+  <meta content="Expandables | Stake" property="twitter:title">
   <meta content="Stake your pandas and earn $BAMBOO! Venture into the Metaverse and use $BAMBOO in the Expandables ecosystem." property="twitter:description">
   <meta property="og:type" content="website">
   <meta property="og:image:width" content="300">
@@ -18,6 +18,7 @@
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
   <link href="css/webflow.css" rel="stylesheet" type="text/css">
   <link href="css/expandables.webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/index.css" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
   <script type="text/javascript">WebFont.load({  google: {    families: ["Roboto:regular"]  }});</script>
   <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
@@ -28,51 +29,105 @@
   <script type="text/javascript">window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-WFPEW80BN8', {'anonymize_ip': false});</script>
 </head>
 <body class="body">
-  <nav id="desktop-navbar" class="navbar">
-    <a href="index.html" class="logo-link w-inline-block"><img src="images/Expandables.svg" loading="lazy" width="266" alt="Expandables Logo Link."></a>
-    <a href="/#About_frame" class="navigation_link w-inline-block">
-      <div>About</div>
-    </a>
-    <a href="/#Roadmap" class="navigation_link w-inline-block">
-      <div>Roadmap</div>
-    </a>
-    <a href="stake.html" class="navigation_link w-inline-block">
-      <div>Stake</div>
-    </a>
-    <a href="/#FAQ" class="navigation_link w-inline-block">
-      <div>Faq</div>
-    </a>
-    <a href="/#Team" class="navigation_link w-inline-block">
-      <div>Team</div>
-    </a>
-    <div class="social_link_div">
-      <a href="https://opensea.io/collection/expandables-official" target="_blank" class="social_link w-inline-block"><img src="images/Opensea Logo.svg" loading="lazy" width="40" alt="Opensea Logo Link"></a>
-      <a href="https://twitter.com/ExpandablesNFT" target="_blank" class="social_link w-inline-block"><img src="images/akar-icons_twitter-fill.svg" loading="lazy" width="40" alt="Twitter Logo Link."></a>
-      <a href="https://discord.gg/uhZVtpQrXG" target="_blank" class="social_link last w-inline-block"><img src="images/bi_discord.svg" loading="lazy" width="40" alt="Discord Logo Link."></a>
+  <nav id="top">
+    <div id="title-section" class="header">
+       <div id="title">
+        <a href="index.html" class="logo-link w-inline-block"><img src="images/Expandables.svg" loading="lazy" width="266" alt="Expandables Logo Link."></a>
+       </div>
     </div>
-  </nav>
-  <nav id="mobile-navbar">
-    <div class="social_link_div">
-      <a href="https://opensea.io/collection/expandables-official" target="_blank" class="social_link w-inline-block"><img src="images/Opensea Logo.svg" loading="lazy" width="40" alt="Opensea Logo Link"></a>
-      <a href="https://twitter.com/ExpandablesNFT" target="_blank" class="social_link w-inline-block"><img src="images/akar-icons_twitter-fill.svg" loading="lazy" width="40" alt="Twitter Logo Link."></a>
-      <a href="https://discord.gg/uhZVtpQrXG" target="_blank" class="social_link last w-inline-block"><img src="images/bi_discord.svg" loading="lazy" width="40" alt="Discord Logo Link."></a>
+    <div id="header" class="header hide-on-mobile">
+      <a href="./#About_frame" class="navigation_link w-inline-block">
+        <div>About</div>
+      </a>
+      <a href="./#Roadmap" class="navigation_link w-inline-block">
+        <div>Roadmap</div>
+      </a>
+      <a href="./stake.html" class="navigation_link w-inline-block">
+        <div>Stake</div>
+      </a>
+      <a href="./market.html" class="navigation_link w-inline-block">
+        <div>Market</div>
+      </a>
+      <a href="./lookup.html" class="navigation_link w-inline-block">
+        <div>Lookup</div>
+      </a>
+      <a href="/#FAQ" class="navigation_link w-inline-block">
+        <div>Faq</div>
+      </a>
+      <a href="/#Team" class="navigation_link w-inline-block">
+        <div>Team</div>
+      </a>
     </div>
-    <div style="width:100%"><img id="expandables-logo-mobile" src="images/Expandables.svg" loading="lazy" width="266" alt="Expandables Logo Link."></div>
-    <a href="/" class="navigation_link">
-      About
-    </a>
-    <a href="/" class="navigation_link">
-      Roadmap
-    </a>
-    <a href="stake.html" class="navigation_link">
-      Stake
-    </a>
-    <a href="/" class="navigation_link">
-      Faq
-    </a>
-    <a href="/" class="navigation_link">
-      Team
-    </a>
+    <div class="hide-on-mobile" id="socials">
+       <a href="https://twitter.com/ExpandablesNFT" target="_blank" class="link w-inline-block">
+          <img src="images/twitter-black.png" loading="lazy" alt="">
+       </a>
+       <a href="https://discord.gg/uhZVtpQrXG" target="_blank" class="link w-inline-block">
+          <img src="images/dc-white.png" loading="lazy" alt="">
+       </a>
+       <a href="https://opensea.io/collection/expandables-official" target="_blank" class="link w-inline-block">
+          <img src="images/os-transparent.png" loading="lazy" alt="" style="background-color: transparent;border-radius: 50%;">
+       </a>
+    </div>
+    <div id="desktop-wallet-connect-div">
+       <button class="button hide-on-mobile clickable" id="account" href="#" onclick=connect()>CONNECT</button>
+    </div>
+    <div id="mobile-wallet-connect-div" class="hide-on-desktop">
+       <button id="mobile-account" href="#" class="button" onclick=connect()>CONNECT WALLET</button>
+       <button id="navbar" href="#" class="button" onclick="toggleMenu()"></button>
+    </div>
+    <div id="expand-container">
+       <div id="mobile-nav-menu" class="collapsed">
+          <div id="header" class="header hide-on-desktop">
+             <div class="header-menu">
+              <a href="./#About_frame" class="link">
+                About
+              </a>
+             </div>
+             <div class="header-menu">
+              <a href="./#Roadmap" class="link">
+                Roadmap
+              </a>
+             </div>
+             <div class="header-menu">
+              <a href="./stake.html" class="link">
+                Stake
+              </a>
+             </div>
+             <div class="header-menu">
+                <a href="./market.html" class="link">
+                   Market
+                </a>
+             </div>
+             <div class="header-menu">
+                <a href="./lookup.html" class="link">
+                   Lookup
+                </a>
+             </div>
+             <div class="header-menu">
+              <a href="./#FAQ" class="link">
+                 FAQ
+              </a>
+           </div>
+           <div class="header-menu">
+            <a href="./#Team" class="link">
+               Team
+            </a>
+         </div>
+          </div>
+          <div class="hide-on-desktop" id="socials">
+             <a href="https://twitter.com/ExpandablesNFT" target="_blank" class="link w-inline-block">
+                <img src="images/twitter-black.png" loading="lazy" alt="">
+             </a>
+             <a href="https://discord.gg/uhZVtpQrXG" target="_blank" class="link w-inline-block">
+                <img src="images/dc-white.png" loading="lazy" alt="">
+             </a>
+             <a href="https://opensea.io/collection/expandables-official" target="_blank" class="link w-inline-block">
+                <img src="images/os-transparent.png" loading="lazy" alt="" style="background-color: transparent;border-radius: 50%;">
+             </a>
+          </div>
+       </div>
+    </div>
   </nav>
   <div id="block-screen-approval"></div>
   <div class="staking-section wf-section">
@@ -82,6 +137,7 @@
           a separate contract, at which point they will begin to generate 25 $BAMBOO per day. Pandas can be unstaked at any time.
       </p>
       <a href="#" class="stake-btn stake-all w-button" onclick="importBambooToWallet()">Import $BAMBOO to Wallet</a>
+      <br>
     </div><br>
     <div id='claim-sections'>
       <div id='holder-claim-section'>
@@ -145,6 +201,11 @@
         <a id="stake-all-btn" href="#" class="stake-btn stake-all w-button" onclick="unstakeByIds()">unstake selected</a>
     </div>
   </div>
+  <div class="refresh-cache" id="clear-button" onclick="clearPendingTxs()">
+    <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" id="Layer_1" version="1.1" viewBox="0 0 32 32"><path d="M28 16c-1.219 0-1.797.859-2 1.766C25.269 21.03 22.167 26 16 26c-5.523 0-10-4.478-10-10S10.477 6 16 6c2.24 0 4.295.753 5.96 2H20c-1.104 0-2 .896-2 2s.896 2 2 2h6c1.104 0 2-.896 2-2V4c0-1.104-.896-2-2-2s-2 .896-2 2v.518C21.733 2.932 18.977 2 16 2 8.268 2 2 8.268 2 16s6.268 14 14 14c9.979 0 14-9.5 14-11.875C30 16.672 28.938 16 28 16z"/></svg>
+    <div>Refresh Cache</div>
+ </div>
+ <img src="images/Bamboo-forest.png" loading="lazy" alt="" class="banner-img fixed-banner">
   <footer class="footer">
     <a href="#" class="logo-link w-inline-block"><img src="images/Expandables.svg" loading="lazy" alt="Expandables Logo Link."></a>
     <div class="footer_txt">3500 Unique bamboo eating pandas on the ethereum blockchain.</div>
