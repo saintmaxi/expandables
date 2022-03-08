@@ -1085,8 +1085,8 @@ p {
 
 .staker-panda:hover {
   transform: translate(0, -5px);
+  cursor: pointer;
 }
-
 
 .staker-panda:hover .panda-id, .staker-panda:hover .bamboo-earned {
   color: #629658 !important;
